@@ -24,7 +24,7 @@ var Results = React.createClass({
               <button className="btn btn-success save-button" type="button" onClick={this.handleSave.bind(this, search)}>
                 <i className="fa fa-bookmark" aria-hidden="true"></i> Save
               </button>
-              <p className="author">{search.byline.original}}</p>
+              <p className="author">{search.byline.original}</p>
               <p className="summary">{search.snippet}</p>
             </div>
           );
