@@ -1,5 +1,5 @@
 .jumbotron, .panel-primary>.panel-heading {
-  background-color: #20315a;
+  background-color: #708090;
   color: #fff;
 }
 
@@ -8,7 +8,7 @@
 }
 
 .panel-primary {
-  border-color: #20315a;
+  border-color: #708090;
 }
 
 .link-button {

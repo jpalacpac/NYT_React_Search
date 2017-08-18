@@ -21,7 +21,7 @@ var Results = React.createClass({
           return (
             <div className="well" key={i}>
               <a href={search.web_url}><h4 className="title">{search.headline.main}</h4></a>
-              <button className="btn btn-default save-button" type="button" onClick={this.handleSave.bind(this, search)}>
+              <button className="btn btn-success save-button" type="button" onClick={this.handleSave.bind(this, search)}>
                 <i className="fa fa-bookmark" aria-hidden="true"></i> Save
               </button>
               <p className="author">{search.byline.original} &bull; {moment(search.pub_date).format("MMMM D, YYYY")}</p>

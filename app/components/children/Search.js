@@ -63,7 +63,7 @@ var Search = React.createClass({
                     required
                   />
                 </div>
-                <button type="submit" className="btn btn-default" id="run-search"><i className="fa fa-search"></i> Search</button>
+                <button type="submit" className="btn btn-primary" id="run-search"><i className="fa fa-search"></i> Search</button>
               </form>
             </div>
           </div>

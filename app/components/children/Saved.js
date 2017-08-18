@@ -24,7 +24,7 @@ var Saved = React.createClass({
         return (
           <div className="well" key={i} id={res._id}>
             <a href={res.url}><h4 className="title">{res.title}</h4></a>
-            <button className="btn btn-default save-button" type="button" onClick={this.handleClick.bind(this, res)}>
+            <button className="btn btn-danger save-button" type="button" onClick={this.handleClick.bind(this, res)}>
               <i className="fa fa-trash-o" aria-hidden="true"></i> Remove
             </button>
             <p className="author">{res.author} &bull; {moment(res.date).format("MMMM D, YYYY")}</p>

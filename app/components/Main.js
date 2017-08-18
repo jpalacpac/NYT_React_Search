@@ -6,8 +6,8 @@ var Route = router.Route;
 var Search = require("./children/Search");
 var Saved = require("./children/Saved");
 
-var keys = require("../../keys.js");
-var apiKey = process.env.NYT_API || keys.nytApi.key;
+
+var apiKey = "2c24b581b73c4223ad99a961cfaad9db"
 
 var Main = React.createClass({
   getInitialState: function() {
@@ -21,6 +21,7 @@ var Main = React.createClass({
       this.runSearch(this.state.search, this.state.startYear, this.state.endYear);
     }
   },
+  
   runSearch: function(search, startYear, endYear) {
     // Search NYTimes API for articles
     var searchResults = [];
@@ -95,10 +96,10 @@ var Main = React.createClass({
           <div className="col-md-12">
             <div className="jumbotron text-center">
               <h1><strong><i className="fa fa-newspaper-o" aria-hidden="true"></i>&nbsp;New York Times Search</strong></h1>
-              <Link to="/"><button className="btn btn-primary btn-lg link-button" type="button">
+              <Link to="/"><button className="btn btn-info btn-lg link-button" type="button">
                 <i className="fa fa-search" aria-hidden="true"></i> Search
               </button></Link>
-              <Link to="/saved"><button className="btn btn-default btn-lg link-button" type="button">
+              <Link to="/saved"><button className="btn btn-basic btn-lg link-button" type="button">
                 <i className="fa fa-bookmark" aria-hidden="true"></i> Saved Articles
               </button></Link>
             </div>
