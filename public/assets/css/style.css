@@ -1,0 +1,35 @@
+.jumbotron, .panel-primary>.panel-heading {
+  background-color: #20315a;
+  color: #fff;
+}
+
+.jumbotron {
+  padding: 30px 60px;
+}
+
+.panel-primary {
+  border-color: #20315a;
+}
+
+.link-button {
+  margin-right: 20px;
+}
+
+.title, .save-button {
+  display: inline-block;
+}
+
+.save-button {
+  float: right;
+  margin-top: 3px;
+  margin-left: 10px;
+}
+
+.author, .date {
+  color: gray;
+  font-size: 12px;
+}
+
+footer {
+  padding: 20px;
+}
