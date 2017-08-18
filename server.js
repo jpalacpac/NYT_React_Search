@@ -12,7 +12,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 app.use(express.static(path.join(__dirname, 'public')));
 
-var databaseUri = "mongodb://localhost/nytreact"
+var databaseUri = "mongodb://heroku_h3lk8hzt:s14tr9skj75q4is6v8jein6nr@ds149613.mlab.com:49613/heroku_h3lk8hzt"
 if (process.env.MONGODB_URI) {
   mongoose.connect(process.env.MONGODB_URI, {
     useMongoClient: true
